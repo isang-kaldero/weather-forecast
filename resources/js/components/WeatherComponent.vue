@@ -1,9 +1,8 @@
 <template>    
     <div class="exec">        
         <form>
-            <div class="form-group mb-4">
-            <input type="hidden" name="_token" :value="csrf" />
-            <input type="text" v-model="city" placeholder="Enter City" class="dropdown-toggle px-3 py-2 border border-solid border-gray-300 rounded w-96 mb-4" />
+            <div class="form-group mb-4">            
+            <input type="text" v-model="city" placeholder="Enter City" class="dropdown-toggle px-3 py-2 border border-solid border-gray-300 rounded mb-4 w-full sm:w-96" />
             <button v-on:click="getWeather" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Display Weather</button>
             </div>
         </form>
@@ -47,8 +46,7 @@
         data() {
             return { 
                 showResult: false,
-                showErr: false,
-                csrf: document.head.querySelector('meta[name="csrf-token"]').content,
+                showErr: false,                
                 city: '',
                 w_date: '',
                 w_temp: '',

@@ -7,6 +7,6 @@
             https://github.com/{{ Auth::user()->nickname }}
         </p>        
 
-        <weather-component></room-component>
+        <weather-component></weather-component>
     </div>
 @endsection    

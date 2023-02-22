@@ -5357,7 +5357,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -5365,7 +5364,6 @@ __webpack_require__.r(__webpack_exports__);
     return {
       showResult: false,
       showErr: false,
-      csrf: document.head.querySelector('meta[name="csrf-token"]').content,
       city: '',
       w_date: '',
       w_temp: '',
@@ -28220,11 +28218,6 @@ var render = function () {
     _c("form", [
       _c("div", { staticClass: "form-group mb-4" }, [
         _c("input", {
-          attrs: { type: "hidden", name: "_token" },
-          domProps: { value: _vm.csrf },
-        }),
-        _vm._v(" "),
-        _c("input", {
           directives: [
             {
               name: "model",
@@ -28234,7 +28227,7 @@ var render = function () {
             },
           ],
           staticClass:
-            "dropdown-toggle px-3 py-2 border border-solid border-gray-300 rounded w-96 mb-4",
+            "dropdown-toggle px-3 py-2 border border-solid border-gray-300 rounded mb-4 w-full sm:w-96",
           attrs: { type: "text", placeholder: "Enter City" },
           domProps: { value: _vm.city },
           on: {
